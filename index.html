@@ -7,5 +7,41 @@
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="head"><p>TIP CALCULATOR</p></div>
+      <div class="card">
+        <form>
+          <label>
+            How Much Was Your Bill ? <br />
+            <div class="line">
+              <div class="sign">$</div>
+              <input type="number" name="bill" class="input" />
+            </div>
+          </label>
+          <label>
+            How Many People Sharing The Bill ? <br />
+            <div class="line">
+              <div class="sign"><img src="./media/contacts-fill.png" /></div>
+              <input type="number" name="bill" class="input" />
+            </div>
+          </label>
+          <label>
+            How Was Your Service
+            <div class="line">
+              <select>
+                <option value="Choose...">Choose...</option>
+                <option value="Great - 20%">Great - 20%</option>
+                <option value="Good - 10%">Good - 10%</option>
+                <option value="Bad - 2%">Bad - 2%</option>
+              </select>
+            </div>
+          </label>
+          <div class="calc">
+            <input type="button" value="Calculate" class="calculate" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
