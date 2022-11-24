@@ -102,3 +102,20 @@ body {
   cursor: pointer;
   background-color: #86bbd8;
 }
+@media (max-width: 640px) {
+  :root {
+    font-size: 1rem;
+  }
+  .container {
+    height: 33.5rem;
+    width: 17rem;
+    border-radius: 0.5rem;
+  }
+  .head {
+    height: 10%;
+  }
+  .sign {
+    height: 3rem;
+    width: 4rem;
+  }
+}
