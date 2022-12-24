@@ -17,38 +17,40 @@ const owebill = document.querySelector(".owebill");
 btn.addEventListener(
   "click",
   (calculate = () => {
-    if (service.value === "Great") {
-      ans.style.display = "block";
-      let tip = 0.2 * bill.value;
-      let total = tip + parseInt(bill.value);
-      let owe = total / parseInt(user.value);
-      tipbill.textContent = `Tip Amount $ ${tip}`;
-      totalbill.textContent = `Total Amount $  ${total}`;
-      owebill.textContent = `Each Person Owes $ ${owe}`;
-    } else if (service.value === "Good") {
-      ans.style.display = "block";
-      let tip = 0.1 * bill.value;
-      let total = tip + parseInt(bill.value);
-      let owe = total / parseInt(user.value);
-      tipbill.textContent = `Tip Amount $ ${tip}`;
-      totalbill.textContent = `Total Amount $ ${total}`;
-      owebill.textContent = `Each Person Owes $ ${owe}`;
-    } else if (service.value === "Bad") {
-      let total = tip + parseInt(bill.value);
-      let owe = total / parseInt(user.value);
-      ans.style.display = "flex";
-      tipbill.textContent = `Tip Amount $ ${tip}`;
-      totalbill.textContent = `Total Amount $ ${total}`;
-      owebill.textContent = `Each Person Owes $ ${owe}`;
+    if (bill.value === "") {
+      req.style.display = "block";
+      billreq.textContent = "Bill Amount Cannot Be Blank";
+    } else if (user.value === "") {
+      req.style.display = "block";
+      userreq.textContent = "Number Of Users Must Be Greater Than Zero";
+    } else if (service.value === "Choose...") {
+      req.style.display = "block";
+      servicereq.textContent = "You Must Select A Service";
+    } else {
+      if (service.value === "Great") {
+        ans.style.display = "block";
+        let tip = 0.2 * bill.value;
+        let total = tip + parseInt(bill.value);
+        let owe = total / parseInt(user.value);
+        tipbill.textContent = `Tip Amount $ ${tip.toFixed(2)}`;
+        totalbill.textContent = `Total Amount $  ${total.toFixed(2)}`;
+        owebill.textContent = `Each Person Owes $ ${owe.toFixed(2)}`;
+      } else if (service.value === "Good") {
+        ans.style.display = "block";
+        let tip = 0.1 * bill.value;
+        let total = tip + parseInt(bill.value);
+        let owe = total / parseInt(user.value);
+        tipbill.textContent = `Tip Amount $ ${tip.toFixed(2)}`;
+        totalbill.textContent = `Total Amount $ ${total.toFixed(2)}`;
+        owebill.textContent = `Each Person Owes $ ${owe.toFixed(2)}`;
+      } else if (service.value === "Bad") {
+        let total = tip + parseInt(bill.value);
+        let owe = total / parseInt(user.value);
+        ans.style.display = "flex";
+        tipbill.textContent = `Tip Amount $ ${tip.toFixed(2)}`;
+        totalbill.textContent = `Total Amount $ ${total.toFixed(2)}`;
+        owebill.textContent = `Each Person Owes $ ${owe.toFixed(2)}`;
+      }
     }
   })
 );
-// if (bill.value === "") {
-//     billreq.textContent = "Bill Amount Cannot Be Blank";
-//   } else if (user.value === "") {
-//     ("Number Of Users Must Be Greater Than Zero");
-//   } else if (service.value === "Choose...") {
-//     ("You Must Select A Service");
-//   } else {
-
-//   }
