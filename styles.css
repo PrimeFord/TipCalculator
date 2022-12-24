@@ -45,6 +45,16 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
 }
+.req {
+  background-color: #f8d7da;
+  height: max-content;
+  width: 100%;
+  color: brown;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
 .line {
   display: flex;
   height: 3rem;
