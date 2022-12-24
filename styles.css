@@ -119,6 +119,7 @@ body {
   padding: 1rem 0;
   width: 100%;
   display: none;
+  font-size: 1.25rem;
 }
 @media (max-width: 640px) {
   :root {
