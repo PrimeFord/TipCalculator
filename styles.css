@@ -126,7 +126,7 @@ body {
     font-size: 1rem;
   }
   .container {
-    height: 33.5rem;
+    height: max-content;
     width: 17rem;
     border-radius: 0.5rem;
   }
