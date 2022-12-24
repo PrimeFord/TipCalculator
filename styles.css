@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 .container {
-  height: 30.5rem;
+  height: max-content;
   width: 45.5rem;
   background-color: white;
   border-radius: 0.5rem;
