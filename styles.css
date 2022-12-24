@@ -53,7 +53,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 1.5rem;
+  display: none;
 }
 .line {
   display: flex;
@@ -111,6 +112,12 @@ body {
 .calculate:hover {
   cursor: pointer;
   background-color: #86bbd8;
+}
+.ans {
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  display: none;
 }
 @media (max-width: 640px) {
   :root {

@@ -12,33 +12,33 @@
       <div class="head"><p>TIP CALCULATOR</p></div>
       <div class="card">
         <div class="req">
-          <p class="billreq">sfffv</p>
-          <p class="userreq">vfdf</p>
-          <p class="servicereq">ffvvfvc</p>
+          <p class="billreq"></p>
+          <p class="userreq"></p>
+          <p class="servicereq"></p>
         </div>
         <form>
           <label>
             How Much Was Your Bill ? <br />
             <div class="line">
               <div class="sign">$</div>
-              <input type="number" name="bill" class="input" />
+              <input type="number" name="bill" class="input" id="bill" />
             </div>
           </label>
           <label>
             How Many People Sharing The Bill ? <br />
             <div class="line">
               <div class="sign"><img src="./media/contacts-fill.png" /></div>
-              <input type="number" name="bill" class="input" />
+              <input type="number" name="bill" class="input" id="user" />
             </div>
           </label>
           <label>
             How Was Your Service
             <div class="line">
-              <select>
+              <select id="service">
                 <option value="Choose...">Choose...</option>
-                <option value="Great - 20%">Great - 20%</option>
-                <option value="Good - 10%">Good - 10%</option>
-                <option value="Bad - 2%">Bad - 2%</option>
+                <option value="Great">Great - 20%</option>
+                <option value="Good">Good - 10%</option>
+                <option value="Bad">Bad - 2%</option>
               </select>
             </div>
           </label>
@@ -46,6 +46,11 @@
             <input type="button" value="Calculate" class="calculate" />
           </div>
         </form>
+        <div class="ans">
+          <p class="tipbill" class="ans"></p>
+          <p class="totalbill" class="ans"></p>
+          <p class="owebill" class="ans"></p>
+        </div>
       </div>
     </div>
     <script src="./main.js"></script>
