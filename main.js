@@ -44,9 +44,10 @@ btn.addEventListener(
         totalbill.textContent = `Total Amount $ ${total.toFixed(2)}`;
         owebill.textContent = `Each Person Owes $ ${owe.toFixed(2)}`;
       } else if (service.value === "Bad") {
+        ans.style.display = "block";
+        let tip = 0.02 * bill.value;
         let total = tip + parseInt(bill.value);
         let owe = total / parseInt(user.value);
-        ans.style.display = "flex";
         tipbill.textContent = `Tip Amount $ ${tip.toFixed(2)}`;
         totalbill.textContent = `Total Amount $ ${total.toFixed(2)}`;
         owebill.textContent = `Each Person Owes $ ${owe.toFixed(2)}`;
