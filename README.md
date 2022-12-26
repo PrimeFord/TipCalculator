@@ -1,6 +1,6 @@
 # TipCalculator
 
-_An implementation of Tip Calculator website Project with HTML/CSS_
+_An implementation of Tip Calculator website Project with HTML/CSS/JavaScript_
 
 ## Getting Started
 
@@ -19,6 +19,7 @@ Clone or download this repository and run with a local server of open `index.htm
 
 - HTML
 - CSS
+- JAVASCRIPT 
 
 ## Demo
 
